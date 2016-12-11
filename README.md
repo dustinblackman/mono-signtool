@@ -1,6 +1,6 @@
 # mono-signtool
 
-This repo is a dirty workaround to the issues with [Squriell.Windows](https://github.com/Squirrel/Squirrel.Windows/pull/505) and [windows-installer](https://github.com/electron/windows-installer/issues/27) that prevent signing windows executables on OSX/Linux machines with Wine. It works by replacing the `signtool.exe`, and calls `osslsigncode` that lives in your OSX/Linux from __within__ Wine.
+This project is a dirty workaround to the issues with [Squriell.Windows](https://github.com/Squirrel/Squirrel.Windows/pull/505) and [windows-installer](https://github.com/electron/windows-installer/issues/27) that prevent signing windows executables on OSX/Linux machines with Wine. It works by replacing the `signtool.exe`, and calls `osslsigncode` that lives in your OSX/Linux host from __within__ Wine.
 
 `osslsigncode` must be located at `/usr/local/bin/osslsigncode` on your host system. The app supports dual signing by default.
 
