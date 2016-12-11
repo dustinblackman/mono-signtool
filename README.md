@@ -11,7 +11,7 @@ An example setup on OSX using [electron windows-installer](https://github.com/el
 ```sh
 brew install osslsigncode
 npm i --save-dev electron-winstaller
-curl -Ls "https://github.com/dustinblackman/mono-signtool/releases/download/0.0.1/mono-signtool-windows-386-0.0.1.zip" | tar xz -C ./node_modules/electron-winstaller/vendor/
+curl -Ls "https://github.com/dustinblackman/mono-signtool/releases/download/0.0.1/mono-signtool.tar.gz" | tar xz -C ./node_modules/electron-winstaller/vendor/
 node setup.js
 ```
 
