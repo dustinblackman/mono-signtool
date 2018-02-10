@@ -4,6 +4,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"time"
 )
 
 func main() {
@@ -59,6 +60,8 @@ func main() {
 			if _, err := os.Stat(filePath + ".signed"); err == nil {
 				break
 			}
+
+			time.Sleep(500 * time.Millisecond)
 		}
 
 		err := cmd.Process.Kill()
